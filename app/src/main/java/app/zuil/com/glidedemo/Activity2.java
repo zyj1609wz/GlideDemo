@@ -15,7 +15,7 @@ import com.bumptech.glide.request.target.SimpleTarget;
 public class Activity2 extends AppCompatActivity {
 
     String url = "http://o7rvuansr.bkt.clouddn.com/big1.jpg" ;
-    ImageView imageView1 , imageView2 ;
+    ImageView imageView1 , imageView2 , imageView3 ;
     private static int width  ;
     private static int height ;
 
@@ -29,6 +29,7 @@ public class Activity2 extends AppCompatActivity {
 
         imageView1 = (ImageView) findViewById( R.id.image1 );
         imageView2 = (ImageView) findViewById( R.id.image2 );
+        imageView3 = (ImageView) findViewById( R.id.image3 );
         params = imageView2.getLayoutParams() ;
 
         //测量图片的宽高
@@ -42,9 +43,6 @@ public class Activity2 extends AppCompatActivity {
                 Glide.with( Activity2.this).load( url ).into( imageView1 ) ;
             }
 
-
-
-
         });
 
         //加载第二张图
@@ -52,6 +50,14 @@ public class Activity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Glide.with( Activity2.this).load( url ).diskCacheStrategy( DiskCacheStrategy.ALL ).into( imageView2 ) ;
+            }
+        });
+
+        //加载第三张图
+        findViewById( R.id.bt3 ).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Glide.with( Activity2.this).load( url ).into( imageView3 ) ;
             }
         });
 
