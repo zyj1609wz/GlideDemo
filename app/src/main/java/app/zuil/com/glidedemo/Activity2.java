@@ -39,7 +39,7 @@ public class Activity2 extends AppCompatActivity {
         findViewById( R.id.bt1 ).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Glide.with( Activity2.this).load( url ).diskCacheStrategy( DiskCacheStrategy.ALL ).into( imageView1 ) ;
+                Glide.with( Activity2.this).load( url ).into( imageView1 ) ;
             }
         });
 
