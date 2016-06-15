@@ -41,6 +41,10 @@ public class Activity2 extends AppCompatActivity {
             public void onClick(View v) {
                 Glide.with( Activity2.this).load( url ).into( imageView1 ) ;
             }
+
+
+
+
         });
 
         //加载第二张图
