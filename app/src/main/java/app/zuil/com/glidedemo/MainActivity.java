@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.activity2).setOnClickListener(this);
         findViewById(R.id.priorityActivity).setOnClickListener(this);
         findViewById(R.id.thumbnailActivity).setOnClickListener(this);
+        findViewById(R.id.gifActivity).setOnClickListener(this);
     }
 
     @Override
@@ -32,6 +33,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.thumbnailActivity :
                 startActivity( new Intent( MainActivity.this , ThumbnailActivity.class));
+                break;
+            case R.id.gifActivity :
+                startActivity( new Intent( MainActivity.this , GifActivity.class));
                 break;
         }
     }
