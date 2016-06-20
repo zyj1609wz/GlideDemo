@@ -47,13 +47,13 @@
 
             <ImageView
                 android:id="@+id/image2"
-                android:layout_width="300dp"
-                android:layout_height="300dp" />
+                android:layout_width="400dp"
+                android:layout_height="400dp" />
 
             <ImageView
                 android:id="@+id/image3"
-                android:layout_width="600dp"
-                android:layout_height="600dp" />
+                android:layout_width="400dp"
+                android:layout_height="400dp" />
 
         </LinearLayout>
 

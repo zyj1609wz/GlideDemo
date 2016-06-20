@@ -32,7 +32,8 @@ public class Activity2 extends AppCompatActivity {
         imageView3 = (ImageView) findViewById( R.id.image3 );
         params = imageView2.getLayoutParams() ;
 
-        //测量图片的宽高
+        //测量图片的
+        // 宽高
         width = params.width ;
         height = params.height ;
 
@@ -42,14 +43,13 @@ public class Activity2 extends AppCompatActivity {
             public void onClick(View v) {
                 Glide.with( Activity2.this).load( url ).into( imageView1 ) ;
             }
-
         });
 
         //加载第二张图
         findViewById( R.id.bt2 ).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Glide.with( Activity2.this).load( url ).diskCacheStrategy( DiskCacheStrategy.ALL ).into( imageView2 ) ;
+                Glide.with( Activity2.this).load( url ).diskCacheStrategy( DiskCacheStrategy.SOURCE ).into( imageView2 ) ;
             }
         });
 

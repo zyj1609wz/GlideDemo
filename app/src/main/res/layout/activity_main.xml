@@ -25,5 +25,20 @@
             android:text="Activity2"
             />
 
+        <Button
+            android:id="@+id/priorityActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Glide 设置加载优先级"
+            />
+
+        <Button
+            android:id="@+id/thumbnailActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="缩略图的支持"
+            />
+
+
     </LinearLayout>
 </RelativeLayout>

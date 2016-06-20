@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.circle).setOnClickListener(this);
         findViewById(R.id.activity2).setOnClickListener(this);
+        findViewById(R.id.priorityActivity).setOnClickListener(this);
+        findViewById(R.id.thumbnailActivity).setOnClickListener(this);
     }
 
     @Override
@@ -24,6 +26,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.activity2 :
                 startActivity( new Intent( MainActivity.this , Activity2.class));
+                break;
+            case R.id.priorityActivity :
+                startActivity( new Intent( MainActivity.this , PriorityActivity.class));
+                break;
+            case R.id.thumbnailActivity :
+                startActivity( new Intent( MainActivity.this , ThumbnailActivity.class));
                 break;
         }
     }
