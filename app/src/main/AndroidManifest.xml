@@ -23,7 +23,8 @@
         <activity android:name=".Activity2" />
         <activity android:name=".PriorityActivity" />
         <activity android:name=".ThumbnailActivity" />
-        <activity android:name=".GifActivity"></activity>
+        <activity android:name=".GifActivity" />
+        <activity android:name=".VideoActivity"></activity>
     </application>
 
 </manifest>
