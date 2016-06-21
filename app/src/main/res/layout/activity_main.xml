@@ -53,6 +53,13 @@
             android:text="视频的支持"
             />
 
+        <Button
+            android:id="@+id/glideModuleActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义缓存目录"
+            />
+
 
 
     </LinearLayout>

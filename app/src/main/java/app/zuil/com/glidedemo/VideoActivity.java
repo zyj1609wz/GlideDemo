@@ -20,7 +20,6 @@ public class VideoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_video);
 
         imageView = (ImageView) findViewById( R.id.image_video );
-
         String files = Environment.getExternalStorageDirectory().getAbsolutePath() + "/yueyu.mkv" ;
         Glide.with( this ).load( files ).into( imageView ) ;
     }
